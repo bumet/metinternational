@@ -1,7 +1,7 @@
 {
   "name": "metinternational",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project contains the development files for the custom script on the MET International website.",
   "main": "met-international.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,16 @@
   "license": "ISC",
   "devDependencies": {
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bumet/metinternational.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bumet/metinternational/issues"
+  },
+  "homepage": "https://github.com/bumet/metinternational#readme"
 }

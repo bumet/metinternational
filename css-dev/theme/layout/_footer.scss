@@ -1,0 +1,19 @@
+.siteFooter, .siteFooter a {
+  color: $light-gray;
+}
+.siteFooter {
+  @include breakpoint($SM) {
+    padding: 50px 50px 50px 25px;
+  }
+}
+.has-branding .siteFooter-brand {
+  @include breakpoint($SM) {
+    float: right;
+    margin: 0 0 0 50px;
+  }
+}
+.site-footer-brand + .siteFooter-content {
+  @include breakpoint($SM) {
+    margin: 0;
+  }
+}

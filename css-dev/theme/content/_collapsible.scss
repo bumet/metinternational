@@ -1,0 +1,27 @@
+.bu_collapsible:focus:after,
+.bu_collapsible:hover:after {
+  border-top-color: $bu-red;
+}
+
+.bu_collapsible_open .bu_collapsible:focus:after,
+.bu_collapsible_open .bu_collapsible:hover:after {
+  border-top-color: transparent;
+  border-bottom-color: $bu-red;
+}
+
+.bu_collapsible {
+  overflow: visible;
+}
+
+.bu_collapsible_container {
+  background: rgba(34,34,34,1);
+  background: radial-gradient(ellipse at top center, rgba(34,34,34,.4) 0%, rgba(34,34,34,0) 70%, rgba(34,34,34,0) 100%);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  padding: 8px 0 13px;
+}
+
+.bu_collapsible_open.bu_collapsible_container {
+  background: none;
+}

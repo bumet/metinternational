@@ -1,0 +1,137 @@
+.widget h3 {
+  font-size: 1.3em;
+  line-height: 1.46;
+}
+
+#contentnav h3,
+.widget_nav_menu h3 {
+  padding: 10px 10px 10px 0;
+}
+
+.widget a:link {
+  color: #000;
+}
+
+.widget a:visited {
+  color: #000;
+}
+
+.widget a:hover {
+  color: $link-color;
+  @include transition(all .3s ease);
+}
+
+.widget a:active {
+  color: #000;
+}
+
+.widgetTitle a:after {
+  content: none;
+}
+
+#contentnav li,
+.widget_nav_menu li {
+  a:link,
+  a:visited {
+    color: $primary-color;
+    padding: 0.625em;
+    font-size: 1em;
+    line-height: 1.46em;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+#contentnav li a:hover,
+.widget_nav_menu li a:hover {
+  color: $link-color;
+  @include transition(all .3s ease);
+  background: $hover-color;
+}
+
+#contentnav li a:active,
+.widget_nav_menu li a:active {}
+
+#contentnav .current_page_ancestor,
+#contentnav .current_page_item,
+.widget_nav_menu .current_page_ancestor,
+.widget_nav_menu .current_page_item {
+   > a:visited,
+  > a:link {
+    font-weight: bold;
+  }
+}
+
+.widget ul a {
+  text-decoration: none;
+}
+
+#contentnavlist.widget ul > li a:hover {
+  background: $hover-color;
+  @include transition(all .3s ease);
+}
+
+#bu_calendar-2 > ul > li:nth-child(even) {
+  background: #f0f0f0;
+}
+
+#bu_calendar-2 > ul > li a:link,
+active,
+visited {}
+
+#bu_calendar-2 > ul > li:hover {
+  @include transition(all .3s ease);
+  background: $hover-color;
+}
+
+#bu_calendar-2 > ul > li {
+  display: table;
+  width: 100%;
+}
+
+#bu_calendar-2 > ul > li > a {
+  display: table-row;
+}
+
+.widget-bu-calendar .graphic li {
+  padding: 7px 0;
+}
+
+.widget-bu-calendar .graphic li:first-child {
+  padding-top: 10px;
+  margin-top: -20px;
+}
+
+.widget-bu-calendar .graphic a {
+  padding: 0;
+  margin: 0;
+  position: static;
+}
+
+.widget-bu-calendar .graphic .date {
+  font-family: "Benton", Helvetica, sans-serif;
+  font-size: 1em;
+  display: table-cell;
+  border-right: 1px solid #ccc;
+  position: static;
+}
+
+.widget-bu-calendar .graphic .day {
+  font-size: 1em;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.widget-bu-calendar .graphic .month {
+  font-size: 0.75em;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.event-title {
+  display: table-cell;
+  font-size: 0.75em;
+  line-height: 1.46;
+  vertical-align: middle;
+  padding-left: 10px;
+}

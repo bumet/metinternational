@@ -1,0 +1,8 @@
+.l-sideNav .primaryNav-menu a {
+  text-transform: uppercase;
+}
+
+.primaryNav-menu li a.active,
+.primaryNav-menu li a.active_section {
+  color: $link-color;
+}

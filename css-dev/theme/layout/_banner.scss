@@ -1,0 +1,33 @@
+.bannerContainer {
+  @include breakpoint($SM) {
+    position: relative;
+  }
+}
+
+.bannerContainer:after {
+  @include breakpoint($SM) {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: radial-gradient(ellipse at left bottom, rgba(34,34,34,.9) 15%, rgba(34,34,34,0) 50%, rgba(34,34,34,0) 100%);
+    background-position: 5% bottom;
+  }
+}
+.bannerContainer:after {
+  @include breakpoint(1405px) {
+    left: 50%;
+    margin-left: -585px;
+  }
+}
+
+.bannerContainer img {
+  max-width: 1170px;
+  width: 100%;
+}
+
+.bannerContainer-windowWidth {
+  padding: 0;
+}

@@ -1,0 +1,23 @@
+$SM: 768px;
+$MD: 992px;
+$LG: 1130px;
+
+/*font*/
+$font-primary: "Benton", Helvetica, sans-serif;
+/*font*/
+
+/*color*/
+$black: #000;
+$white: #FFF;
+$off-black: #222;
+$bu-red: #CC0000;
+$blue: #336699;
+$light-gray: #DEDEDE;
+$violet: #DADEEE;
+/*color*/
+
+$primary-color: $off-black;
+$hover-color: #F0F0F0;
+$link-color: $bu-red;
+$visited-link: adjust-color($link-color, $lightness: -6%, $saturation: -35%);
+$footer-color: $light-gray;
